@@ -58,6 +58,7 @@ for ii=1:length(nirsfiles)
     
     % ROB EDITS - LUMO
     nirs.SD = nirs.SD3D;
+    nirs.SD.Landmarks
     % ROB EDITS END
     
     if DEBUG==false
