@@ -56,6 +56,10 @@ for ii=1:length(nirsfiles)
 
     nirs = load(src,'-mat');
     
+    % ROB EDITS - LUMO
+    nirs.SD = nirs.SD3D;
+    % ROB EDITS END
+    
     if DEBUG==false
         snirf(ii) = SnirfClass(nirs);
     else
